@@ -17,9 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     
+    // 文字データを表示する
+    NSString *myStr = @"Hello World";
+    NSLog(@"%@", myStr);
     
-    
+    // 
+
     
 }
 
