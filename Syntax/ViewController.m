@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "StringHandling.h"
+#import "DataHandling.h"
 
 @interface ViewController ()
 
@@ -21,8 +22,10 @@
     [super viewDidLoad];
 
     StringHandling *stringHandling = [[StringHandling alloc] init];
-    [stringHandling viewStringHandling];
+    [stringHandling view];
     
+    DataHandling *dataHandling = [[DataHandling alloc] init];
+    [dataHandling view];
     
 }
 

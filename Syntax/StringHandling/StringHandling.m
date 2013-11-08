@@ -17,7 +17,7 @@
     return self;
 }
 
-- (void)viewStringHandling
+- (void)view
 {
     // 文字データを表示する
     NSString *strGreet = @"Hello World";
@@ -32,6 +32,13 @@
     float temp = 36.5;
     NSString *strFloat = [NSString stringWithFormat:@"体温は %f 度です。", temp];
     NSLog(@"%@", strFloat);
+    
+    // 他の文字変数の文字データで新しい文字データを生成
+    NSString *strPhone = @"iPhone";
+    NSString *strPhone2 = [NSString stringWithFormat:@"私は %@ です", strPhone];
+    NSLog(@"%@", strPhone2);
+    
+    
 }
 
 @end

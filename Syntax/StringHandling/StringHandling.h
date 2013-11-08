@@ -11,6 +11,6 @@
 @interface StringHandling : NSObject
 
 - (id)init;
-- (void)viewStringHandling;
+- (void)view;
 
 @end
