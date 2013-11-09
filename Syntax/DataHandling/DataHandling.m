@@ -24,6 +24,9 @@
     
     // 配列要素数
     NSLog(@"%d", array.count);
+    
+    // 配列要素番号指定
+    NSLog(@"%@", [array objectAtIndex:1]);
 }
 
 @end
