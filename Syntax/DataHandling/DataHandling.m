@@ -27,6 +27,13 @@
     
     // 配列要素番号指定
     NSLog(@"%@", [array objectAtIndex:1]);
+    
+    // 配列要素の追加削除v NSMutableArray を使用
+    NSMutableArray *mArray = [NSMutableArray arrayWithObjects:@"1st", @"2nd", @"3rd", nil];
+    NSLog(@"%@", mArray);
+    
+    [mArray addObject:@"4th"];
+    NSLog(@"%@", mArray);
 }
 
 @end
