@@ -49,6 +49,21 @@
     [mArray exchangeObjectAtIndex:0 withObjectAtIndex:1];
     NSLog(@"%@", mArray);
     
+    
+    // Dictionary
+    // 辞書データ作成
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          @"JoJo", @"Araki",
+                          @"Utyu-Kyodai", @"Koyama",
+                          @"Dragon-ball", @"Toriyama",
+                          nil];
+    NSLog(@"%@", dict);
+    
+    // 全キーワード出力
+    NSLog(@"%@", dict.allKeys);
+    
+    // キーワード指定読み出し
+    NSLog(@"%@", [dict objectForKey:@"Araki"]);
 }
 
 @end

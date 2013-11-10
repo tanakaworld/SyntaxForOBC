@@ -10,6 +10,7 @@
 
 #import "StringHandling.h"
 #import "DataHandling.h"
+#import "ControleStatement.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,10 @@
     
     DataHandling *dataHandling = [[DataHandling alloc] init];
     [dataHandling view];
+    
+    ControleStatement *controlStatement = [[ControleStatement alloc] init];
+    [controlStatement view];
+
     
 }
 
