@@ -34,6 +34,10 @@
     
     ClassHandling *class = [[ClassHandling alloc] init];
     [class view];
+    
+    NSLog(@"%@", class.name);
+    class.name = @"New Name";
+    NSLog(@"%@", class.name);
 }
 
 - (void)didReceiveMemoryWarning
