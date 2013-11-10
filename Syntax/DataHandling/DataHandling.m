@@ -41,10 +41,13 @@
     [mArray insertObject:@"Interruption" atIndex:2];
     NSLog(@"%@", mArray);
     
-    // 要素の入れ替え
+    // 要素の置換
     [mArray replaceObjectAtIndex:2 withObject:@"Replace"];
     NSLog(@"%@", mArray);
     
+    // 要素の入替
+    [mArray exchangeObjectAtIndex:0 withObjectAtIndex:1];
+    NSLog(@"%@", mArray);
     
 }
 
