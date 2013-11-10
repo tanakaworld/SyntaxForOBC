@@ -28,12 +28,24 @@
     // 配列要素番号指定
     NSLog(@"%@", [array objectAtIndex:1]);
     
+    
     // 配列要素の追加削除v NSMutableArray を使用
     NSMutableArray *mArray = [NSMutableArray arrayWithObjects:@"1st", @"2nd", @"3rd", nil];
     NSLog(@"%@", mArray);
     
+    // 要素の追加（末尾）
     [mArray addObject:@"4th"];
     NSLog(@"%@", mArray);
+    
+    // 要素の追加（指定場所）
+    [mArray insertObject:@"Interruption" atIndex:2];
+    NSLog(@"%@", mArray);
+    
+    // 要素の入れ替え
+    [mArray replaceObjectAtIndex:2 withObject:@"Replace"];
+    NSLog(@"%@", mArray);
+    
+    
 }
 
 @end
