@@ -11,6 +11,7 @@
 #import "StringHandling.h"
 #import "DataHandling.h"
 #import "ControleStatement.h"
+#import "ClassHandling.h"
 
 @interface ViewController ()
 
@@ -30,8 +31,9 @@
     
     ControleStatement *controlStatement = [[ControleStatement alloc] init];
     [controlStatement view];
-
     
+    ClassHandling *class = [[ClassHandling alloc] init];
+    [class view];
 }
 
 - (void)didReceiveMemoryWarning
